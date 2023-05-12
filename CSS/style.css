@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define as propriedades do botão "btc" */
+.btc {
+    width: 202px;
+    height: 48px;
+    color: white;
+    background: #2A3342;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px; 
+}
+
+/* Esconde o botão "btc" que está dentro de uma div com classe "cardCoffe" */
+.cardCoffe .btc {
+    display: none;
+}
+
+/* Exibe o botão "btc" que está dentro de uma div com classe "cardCoffe" quando o mouse passa por cima */
+.cardCoffe:hover .btc {
+    display: block;
+}
+
+/* Define a margem inferior do corpo do cartão */
+.card-body {
+    margin-bottom: 70px;
+}
+
+/* Define as propriedades do botão "close-modal" */
+#close-modal {
+    position: absolute;
+    left: 92.5%;
+    top: 5%;
+    border: none;
+}
+
+/* Define as propriedades de transição e opacidade dos elementos "fade" e "modal" */
+#fade, #modal {
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* Define as propriedades do botão "button-contact" */
+#button-contact {
+    width: 253px;
+    height: 48px;
+    background: #2A3342;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #F6F5FB;
+}
+
+/* Define as propriedades do elemento "fade" */
+#fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.7);
+    z-index: 5;
+}
+
+/* Define as propriedades do elemento "modal" */
+#modal {
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    z-index: 10;
+    width: 671px;
+    height: 500px;
+    max-width: 90%;
+    max-height: 50%;
+    padding: 5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Define as propriedades do cabeçalho do elemento "modal" */
+.modal-header h2 {
+    margin-bottom: 50px;
+    padding-bottom: 1rem;
+    font-family: 'Montserrat' sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 39px;
+    line-height: 20px;
+    color: #000000;
+    margin-top: 1rem;
+}
+
+/* Define o estilo do parágrafo dentro do modal body */
+.modal-body p {
+    margin-bottom: 0.5rem;
+    margin-top: 1px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Montserrat' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 40px;
+} 
+
+/* Oculta o modal e o fade quando a classe .hide é adicionada */
+#modal.hide, #fade.hide {
+    opacity: 0;
+    pointer-events: none;
+} 
+
+ /* Define o posicionamento do modal quando a classe .hide é adicionada */
+#modal.hide {
+    top: 0;
+}
